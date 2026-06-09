@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -16,12 +18,26 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
+
 html { scroll-behavior: smooth; }
-body { font-family: 'DM Sans', sans-serif; background-color: var(--cream); color: var(--text-dark); line-height: 1.6; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
 .font-display { font-family: 'Playfair Display', serif; }
 .font-mono { font-family: 'DM Mono', monospace; }
+
+/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--cream); }
 ::-webkit-scrollbar-thumb { background: var(--gold-light); border-radius: 3px; }
+
+/* Selection */
 ::selection { background: var(--gold-light); color: var(--forest); }
+
+/* Nav scroll active */
 .nav-link.active { color: var(--gold); }
