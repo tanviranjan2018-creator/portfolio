@@ -61,8 +61,8 @@ export default function Contact() {
               {
                 icon: "📧",
                 label: "Email",
-                value: "tanvi.ranjan2018@gmail.com",
-                href: "mailto:tanvi.ranjan2018@gmail.com",
+                value: "tanuhere369@gmail.com",
+                href: "mailto:tanuhere369@gmail.com",
               },
               {
                 icon: "🌐",
