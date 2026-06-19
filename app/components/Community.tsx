@@ -1,27 +1,27 @@
 const initiatives = [
   {
-    title: "Community Service Initiative",
-    org: "Organisation / School Club",
-    hours: "XX hrs",
-    impact: "XX people",
-    icon: "🤝",
-    desc: "Describe your community service here — what cause did you support? What did you do? Who did it help? Share the story behind the work.",
-  },
-  {
-    title: "Environmental / Social Campaign",
-    org: "School / NGO",
-    hours: "XX hrs",
-    impact: "School-wide",
-    icon: "🌿",
-    desc: "Did you lead or join an environmental drive, food bank, fundraiser, or awareness campaign? Add it here.",
-  },
-  {
-    title: "Tutoring / Mentoring",
-    org: "School Programme",
-    hours: "XX hrs",
-    impact: "XX students",
+    title: "Volunteer Tutor",
+    org: "Refugee Centre",
+    hours: "2 mo",
+    impact: "Children",
     icon: "📚",
-    desc: "Did you tutor younger students or mentor peers? Describe the programme and your role in it.",
+    desc: "Taught and tutored children at a refugee centre over a sustained two-month commitment, College — hands-on teaching outside the structure of a regular classroom.",
+  },
+  {
+    title: "KMC Participation",
+    org: "School Programme",
+    hours: "P2 & P4",
+    impact: "2 Recognitions",
+    icon: "🤝",
+    desc: "Earned a Certificate of Participation in Primary 2 and an Honorable Mention in Primary 4 — early steps in a long-running pattern of showing up and contributing.",
+  },
+  {
+    title: "Sports Carnival Logistics",
+    org: "College",
+    hours: "College",
+    impact: "College-wide",
+    icon: "🎪",
+    desc: "Served as Assistant Head of Logistics for a college-wide sports carnival, helping coordinate planning and execution behind the scenes.",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function Community() {
               lineHeight: 1.8,
             }}
           >
-            True growth comes from serving others. These are the initiatives where I've contributed my time, skills, and heart.
+            True growth comes from serving others. From a two-month tutoring commitment to behind-the-scenes event logistics, these are the initiatives where I've contributed my time and effort.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export default function Community() {
                     {item.hours}
                   </p>
                   <p style={{ fontSize: "0.68rem", color: "var(--text-soft)", textTransform: "uppercase", letterSpacing: "0.06em" }}>
-                    Hours
+                    Duration
                   </p>
                 </div>
                 <div
@@ -169,7 +169,7 @@ export default function Community() {
                     {item.impact}
                   </p>
                   <p style={{ fontSize: "0.68rem", color: "var(--text-soft)", textTransform: "uppercase", letterSpacing: "0.06em" }}>
-                    Impact
+                    Focus
                   </p>
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function Community() {
         <div
           style={{
             marginTop: "1.5rem",
-            border: "2px dashed var(--border)",
+            border: "1px solid var(--border)",
             borderRadius: 16,
             padding: "1.75rem",
             textAlign: "center",
@@ -194,7 +194,7 @@ export default function Community() {
             fontFamily: "'DM Mono', monospace",
           }}
         >
-          + ADD MORE COMMUNITY INITIATIVES · PHOTOS · MEDIA FEATURES
+          📎 SUPPORTING LETTERS & PHOTOS AVAILABLE ON REQUEST
         </div>
       </div>
 

@@ -2,58 +2,85 @@ const categories = ["All", "Academic", "Sports", "Leadership", "Arts", "Communit
 
 const awards = [
   {
-    title: "Add Award Title",
-    category: "Sports",
-    year: "2024",
-    issuer: "Issuing Body / School",
-    level: "State",
-    desc: "Describe what you achieved and why this award matters to you.",
-    color: "var(--rust)",
-  },
-  {
-    title: "Add Award Title",
-    category: "Academic",
-    year: "2023",
-    issuer: "School / Ministry",
-    level: "School",
-    desc: "Describe the academic achievement — exam, competition, recognition.",
-    color: "var(--forest)",
-  },
-  {
-    title: "Add Award Title",
-    category: "Leadership",
-    year: "2024",
-    issuer: "School / Organisation",
-    level: "School",
-    desc: "Describe the leadership award or recognition received.",
-    color: "var(--gold)",
-  },
-  {
-    title: "Add Award Title",
-    category: "Sports",
-    year: "2023",
-    issuer: "District / State Board",
-    level: "District",
-    desc: "Another sports achievement — tournament, championship, selection.",
-    color: "var(--rust)",
-  },
-  {
-    title: "Add Award Title",
+    title: "Malaysian Record — Cultural Dance",
     category: "Arts",
-    year: "2023",
-    issuer: "School / Competition",
-    level: "School",
-    desc: "Performing arts, music, or cultural arts recognition.",
+    year: "College",
+    issuer: "Malaysia Book of Records",
+    level: "National",
+    desc: "One performance among many — but this one set a verified national record.",
     color: "var(--gold-light)",
   },
   {
-    title: "Add Award Title",
-    category: "Community",
-    year: "2024",
-    issuer: "NGO / School",
+    title: "Badminton Champion — 1st Place",
+    category: "Sports",
+    year: "College",
+    issuer: "Academy & College Tournament",
+    level: "State",
+    desc: "Won 1st place at both academy and college-level tournaments in the same year.",
+    color: "var(--rust)",
+  },
+  {
+    title: "Head Prefect",
+    category: "Leadership",
+    year: "Form 5",
+    issuer: "School",
     level: "School",
-    desc: "Recognition for community service or volunteering impact.",
+    desc: "Selected to hold the school's highest student leadership position.",
+    color: "var(--gold)",
+  },
+  {
+    title: "Malaysian Brain Bee — Finalist",
+    category: "Academic",
+    year: "Form 5",
+    issuer: "National Competition",
+    level: "National",
+    desc: "Reached the national final of a competitive neuroscience competition.",
+    color: "var(--forest)",
+  },
+  {
+    title: "IGCSE O-Levels — High Achiever",
+    category: "Academic",
+    year: "Form 5",
+    issuer: "School",
+    level: "School",
+    desc: "Recognised as a high achiever across O-Level examinations.",
+    color: "var(--forest)",
+  },
+  {
+    title: "Refugee Centre Volunteer Tutor",
+    category: "Community",
+    year: "College",
+    issuer: "Refugee Centre",
+    level: "Community",
+    desc: "Two-month sustained commitment teaching and tutoring children outside the classroom.",
     color: "var(--forest-mid)",
+  },
+  {
+    title: "Taekwondo — Black Belt",
+    category: "Sports",
+    year: "Primary 6",
+    issuer: "Taekwondo Academy",
+    level: "School",
+    desc: "Progressed through six belts — White to Black — over six consecutive years.",
+    color: "var(--rust)",
+  },
+  {
+    title: "Science Fair — Bronze Award",
+    category: "Academic",
+    year: "Form 4",
+    issuer: "School Science Fair",
+    level: "School",
+    desc: "Independent research project on cell biology, awarded Bronze.",
+    color: "var(--forest)",
+  },
+  {
+    title: "Piano — Grade 9, Merit",
+    category: "Arts",
+    year: "Primary 5",
+    issuer: "Piano Examination Board",
+    level: "School",
+    desc: "Highest piano grade achieved, with Merit distinction.",
+    color: "var(--gold-light)",
   },
 ];
 
@@ -62,6 +89,7 @@ const levelBadge: Record<string, string> = {
   District: "var(--gold)",
   School: "var(--forest-mid)",
   National: "#8B2FC9",
+  Community: "var(--forest)",
 };
 
 export default function Awards() {
@@ -245,17 +273,16 @@ export default function Awards() {
                 <div
                   style={{
                     marginTop: "1rem",
-                    border: "1.5px dashed var(--border)",
+                    border: "1px solid var(--border)",
                     borderRadius: 8,
                     padding: "0.6rem 1rem",
                     fontSize: "0.72rem",
                     fontFamily: "'DM Mono', monospace",
                     color: "var(--text-soft)",
                     textAlign: "center",
-                    cursor: "pointer",
                   }}
                 >
-                  📎 ATTACH CERTIFICATE / PHOTO
+                  📎 Certificate available on request
                 </div>
               </div>
             </div>
@@ -266,7 +293,7 @@ export default function Awards() {
         <div
           style={{
             marginTop: "1.5rem",
-            border: "2px dashed var(--border)",
+            border: "1px solid var(--border)",
             borderRadius: 16,
             padding: "2rem",
             textAlign: "center",
@@ -275,7 +302,7 @@ export default function Awards() {
             fontFamily: "'DM Mono', monospace",
           }}
         >
-          + ADD MORE AWARDS · WRITEUPS · MEDIA FEATURES · CERTIFICATES
+          See the Academics, Sports, Arts, Leadership, and Community sections above for the full record
         </div>
       </div>
 

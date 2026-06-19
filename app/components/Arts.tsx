@@ -1,12 +1,13 @@
 const artsForms = [
   {
-    title: "Performing Arts",
+    title: "Cultural Dance",
     icon: "🎭",
     color: "var(--rust)",
     items: [
-      "Add performance — e.g. School Drama Lead, Cultural Night Performance",
-      "Add performance — e.g. Dance Troupe, Traditional Dance",
-      "Add performance — e.g. School Choir, Solo Performance",
+      "Performed in numerous cultural dance productions from Form 3 onward",
+      "Earned multiple awards across these performances",
+      "One performance recognised in the Malaysia Book of Records",
+      "Indian classical dance, Form 3",
     ],
   },
   {
@@ -14,19 +15,19 @@ const artsForms = [
     icon: "🎵",
     color: "var(--gold)",
     items: [
-      "Add instrument / performance — e.g. Piano Grade 5",
-      "Add music competition entry here",
-      "Add band / ensemble membership here",
+      "Piano — Grade 9, Merit",
+      "Piano — Grade 8, Merit",
+      "Trained from Primary 1 through Primary 5",
     ],
   },
   {
-    title: "Visual Arts & Design",
-    icon: "🎨",
+    title: "National Record",
+    icon: "🏅",
     color: "var(--forest)",
     items: [
-      "Add art competition entry — e.g. National Art Competition",
-      "Add design work — e.g. School Newsletter Designer",
-      "Add gallery / exhibition participation",
+      "Malaysian Record — Cultural Dance performance",
+      "Verified and listed in the Malaysia Book of Records",
+      "Achieved during a college-level performance",
     ],
   },
   {
@@ -34,9 +35,8 @@ const artsForms = [
     icon: "🌺",
     color: "var(--rust-light)",
     items: [
-      "Add cultural activity — e.g. Traditional Dance Representative",
-      "Add language skills — e.g. Tamil, Hindi, Bahasa",
-      "Add cultural event participation",
+      "Active performer across multiple cultural dance traditions",
+      "Languages: add fluencies here — e.g. Hindi, English, Bahasa Malaysia",
     ],
   },
 ];
@@ -103,7 +103,7 @@ export default function Arts() {
             marginBottom: "3.5rem",
           }}
         >
-          Art, music, and culture aren't separate from achievement — they're the soul of it.
+          A record-setting performance, two Merit-grade piano qualifications, and a stage history that started in Form 3 and hasn't stopped since.
         </p>
 
         {/* Grid */}
@@ -175,7 +175,7 @@ export default function Arts() {
         <div
           style={{
             marginTop: "2rem",
-            border: "2px dashed rgba(200,151,62,0.3)",
+            border: "1px solid rgba(200,151,62,0.3)",
             borderRadius: 16,
             padding: "2.5rem",
             textAlign: "center",
@@ -189,7 +189,7 @@ export default function Arts() {
               letterSpacing: "0.1em",
             }}
           >
-            📸 ADD PERFORMANCE PHOTOS · ARTWORK · CERTIFICATES · MEDIA COVERAGE
+            📸 PERFORMANCE PHOTOS & RECORD CERTIFICATE AVAILABLE ON REQUEST
           </p>
         </div>
       </div>

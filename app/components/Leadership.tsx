@@ -1,27 +1,27 @@
 const roles = [
   {
-    title: "Head Prefect / School Leader",
-    org: "Your School Name",
-    period: "20XX – Present",
+    title: "Head Prefect",
+    org: "School — Highest Student Leadership Role",
+    period: "Form 5",
     icon: "👑",
-    desc: "Add your leadership role description here — what responsibilities did you hold? How many students did you lead? What changes did you drive?",
-    skills: ["Team Leadership", "Public Speaking", "Event Planning"],
+    desc: "Selected to hold the school's highest student leadership position — the culmination of years of smaller leadership roles building toward it.",
+    skills: ["Team Leadership", "Public Speaking", "Responsibility"],
   },
   {
-    title: "Club President / Captain",
-    org: "Club or Team Name",
-    period: "20XX – 20XX",
-    icon: "🌟",
-    desc: "Describe another leadership position — committee head, club president, sports captain, etc. Highlight your impact.",
-    skills: ["Organisation", "Initiative", "Mentoring"],
-  },
-  {
-    title: "Event Organiser",
-    org: "School / Community",
-    period: "20XX",
+    title: "Assistant Head of Logistics",
+    org: "College Sports Carnival",
+    period: "College",
     icon: "🎪",
-    desc: "Did you organise a school event, fundraiser, or campaign? Describe it here — scale, outcome, what you learned.",
-    skills: ["Project Management", "Teamwork", "Communication"],
+    desc: "Co-led logistics planning and execution for a college-wide sports carnival — coordinating behind the scenes so the event ran smoothly for every participant.",
+    skills: ["Project Management", "Organisation", "Teamwork"],
+  },
+  {
+    title: "Emcee",
+    org: "Inter-College Hosting",
+    period: "College",
+    icon: "🎤",
+    desc: "Hosted an event on behalf of the college at a partner institution — representing the college on stage and keeping the program running.",
+    skills: ["Public Speaking", "Confidence", "Representation"],
   },
 ];
 
@@ -71,7 +71,7 @@ export default function Leadership() {
             marginBottom: "3.5rem",
           }}
         >
-          Leadership isn't a title — it's a responsibility. Here are the roles where I've served, guided, and grown.
+          Leadership isn't a title — it's a responsibility. From organising logistics behind the scenes to standing on stage as Head Prefect, here's where I've served, guided, and grown.
         </p>
 
         {/* Timeline-style layout */}

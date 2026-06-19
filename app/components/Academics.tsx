@@ -1,27 +1,27 @@
 const subjects = [
-  { subject: "Mathematics", grade: "A+", note: "Add your grade" },
-  { subject: "Science", grade: "A+", note: "Add your grade" },
-  { subject: "English", grade: "A+", note: "Add your grade" },
-  { subject: "Bahasa Malaysia", grade: "A+", note: "Add your grade" },
-  { subject: "History", grade: "A", note: "Add your grade" },
-  { subject: "Add Subject", grade: "--", note: "Edit this" },
+  { subject: "IGCSE O-Levels", grade: "High Achiever", note: "Recognised across O-Level examinations" },
+  { subject: "Hindi (Native Language)", grade: "Top Mark", note: "Highest mark in cohort, Form 4" },
+  { subject: "Kumon Mathematics", grade: "145 / 1,299", note: "Up from 217 / 2,114 — Primary 5 to Primary 6" },
+  { subject: "UCMAS Mental Arithmetic", grade: "Distinction", note: "Primary 3" },
+  { subject: "Academic Excellence", grade: "3rd · 3rd · 5th", note: "Primary 2, Primary 4, Primary 6" },
+  { subject: "Malaysian Brain Bee", grade: "Finalist", note: "National neuroscience competition" },
 ];
 
 const highlights = [
   {
     icon: "🏆",
-    title: "Academic Achievement",
-    desc: "Add your top academic award, exam result, or recognition here — e.g. Top Student Award, Straight A's, Dean's List equivalent.",
+    title: "Academic Excellence, Year After Year",
+    desc: "Three separate Academic Excellence awards across primary school (Primary 2, 4, and 6), followed by High Achiever status at IGCSE O-Levels — a steady climb rather than a single peak.",
   },
   {
     icon: "🔬",
     title: "Science & Research",
-    desc: "Share a project, experiment, competition, or science fair achievement. What did you explore?",
+    desc: "Bronze Award at the Form 4 Science Fair for an independent research project on cell biology — and a place as a national finalist in the Malaysian Brain Bee Competition, a competitive neuroscience challenge.",
   },
   {
-    icon: "📖",
-    title: "Reading & Writing",
-    desc: "Any essays, debates, or creative writing competitions won? Add your literary accomplishments here.",
+    icon: "🧮",
+    title: "Numbers & Languages",
+    desc: "Climbed from the top 11% to the top 12th percentile nationally in Kumon Mathematics between Primary 5 and 6, earned Distinction in UCMAS mental arithmetic, and scored the highest mark in Hindi as a native-language student.",
   },
 ];
 
@@ -120,7 +120,7 @@ export default function Academics() {
             <div
               style={{
                 borderRadius: 14,
-                border: "2px dashed var(--border)",
+                border: "1px solid var(--border)",
                 padding: "1.5rem",
                 textAlign: "center",
                 color: "var(--text-soft)",
@@ -128,9 +128,9 @@ export default function Academics() {
                 fontFamily: "'DM Mono', monospace",
               }}
             >
-              + ADD EXAM RESULTS / CERTIFICATES
+              📎 EXAM RESULTS & CERTIFICATES
               <br />
-              <span style={{ opacity: 0.6 }}>Upload image or writeup here</span>
+              <span style={{ opacity: 0.6 }}>Available on request</span>
             </div>
           </div>
 
@@ -203,7 +203,7 @@ export default function Academics() {
                 letterSpacing: "0.04em",
               }}
             >
-              * Replace grades with actual SPM / trial results
+              * Full certificates available on request
             </p>
           </div>
         </div>

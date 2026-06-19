@@ -1,33 +1,55 @@
 const sports = [
   {
-    sport: "Sport 1",
-    icon: "🏃‍♀️",
-    role: "Add your position / event",
+    sport: "Badminton",
+    icon: "🏸",
+    role: "Tournament Player",
     level: "School & State",
     achievements: [
-      "Add achievement — e.g. Gold Medal, District Championships 2023",
-      "Add achievement — e.g. Captain of the School Team",
-      "Add achievement — e.g. Best Player Award",
+      "1st Place — Academy Tournament Championship",
+      "1st Place — College Tournament Championship",
+      "Bronze, 3rd Place — Academy Tournament (Form 5)",
+      "2nd Place — Form 4 Tournament",
     ],
   },
   {
-    sport: "Sport 2",
-    icon: "🏊‍♀️",
-    role: "Add your position / event",
+    sport: "Track & Field",
+    icon: "🏃‍♀️",
+    role: "Sprinter",
     level: "School Level",
     achievements: [
-      "Add achievement here",
-      "Add achievement here",
+      "Sports Day Sprint Champion — Primary 1",
+      "1st Place, Sprints — Form 5",
+      "3rd Place, Sprints — Primary 5",
+      "1st Place, 4×100m Relay — Form 4",
     ],
   },
   {
-    sport: "Sport 3",
+    sport: "Taekwondo",
+    icon: "🥋",
+    role: "Practitioner",
+    level: "School Level",
+    achievements: [
+      "Progressed through six belts over six years",
+      "White → Yellow → Green → Blue → Red → Black Belt",
+      "Black Belt achieved in Primary 6",
+    ],
+  },
+  {
+    sport: "Football",
+    icon: "⚽",
+    role: "Squad Member",
+    level: "School Level",
+    achievements: [
+      "School Football Team — Form 4 to Form 5",
+    ],
+  },
+  {
+    sport: "Spartan Race",
     icon: "🎯",
-    role: "Add your position / event",
+    role: "Finisher",
     level: "State Level",
     achievements: [
-      "Add achievement here",
-      "Add achievement here",
+      "Completed two Spartan Race obstacle events — Primary 3",
     ],
   },
 ];
@@ -94,7 +116,7 @@ export default function Sports() {
               lineHeight: 1.7,
             }}
           >
-            Representing her school at district, state, and national competitions — and always pushing further.
+            Five sports, one constant: showing up, competing hard, and improving every season — from a Primary 1 sprint title to back-to-back badminton championships.
           </p>
         </div>
 
@@ -203,7 +225,7 @@ export default function Sports() {
         <div
           style={{
             marginTop: "1.5rem",
-            border: "2px dashed var(--border)",
+            border: "1px solid var(--border)",
             borderRadius: 16,
             padding: "2rem",
             textAlign: "center",
@@ -212,7 +234,7 @@ export default function Sports() {
             fontFamily: "'DM Mono', monospace",
           }}
         >
-          + ADD MORE SPORTS · TOURNAMENTS · PHOTOS · CERTIFICATES
+          📎 TOURNAMENT PHOTOS & CERTIFICATES AVAILABLE ON REQUEST
         </div>
       </div>
 
