@@ -1,27 +1,67 @@
-const subjects = [
-  { subject: "IGCSE O-Levels", grade: "High Achiever", note: "Recognised across O-Level examinations" },
-  { subject: "Hindi (Native Language)", grade: "Top Mark", note: "Highest mark in cohort, Form 4" },
-  { subject: "Kumon Mathematics", grade: "145 / 1,299", note: "Up from 217 / 2,114 — Primary 5 to Primary 6" },
-  { subject: "UCMAS Mental Arithmetic", grade: "Distinction", note: "Primary 3" },
-  { subject: "Academic Excellence", grade: "3rd · 3rd · 5th", note: "Primary 2, Primary 4, Primary 6" },
-  { subject: "Malaysian Brain Bee", grade: "Finalist", note: "National neuroscience competition" },
+"use client";
+
+import { motion } from "framer-motion";
+
+/*
+ * ── Colour & font tokens (kept in sync with the site palette) ──
+ * Forest green: #1a2e1a
+ * Gold:         #c9a84c
+ * Rust:         #b85c38
+ * Cream bg:     #f5f1eb
+ * Playfair Display (headings), DM Sans (body)
+ */
+
+/* ── AS-Level results ── */
+const asResults = [
+  { subject: "Mathematics", code: "9709", grade: "A", score: 85 },
+  { subject: "Physics", code: "9702", grade: "A", score: 81 },
+  { subject: "Chemistry", code: "9701", grade: "A", score: 83 },
 ];
 
+/* ── Highlight cards — STEM / Astrophysics direction leads ── */
 const highlights = [
   {
-    icon: "🏆",
-    title: "Academic Excellence, Year After Year",
-    desc: "Three separate Academic Excellence awards across primary school (Primary 2, 4, and 6), followed by High Achiever status at IGCSE O-Levels — a steady climb rather than a single peak.",
-  },
-  {
+    category: "Science & Research",
     icon: "🔬",
-    title: "Science & Research",
-    desc: "Bronze Award at the Form 4 Science Fair for an independent research project on cell biology — and a place as a national finalist in the Malaysian Brain Bee Competition, a competitive neuroscience challenge.",
+    accent: "#b85c38",
+    items: [
+      "Cambridge AS-Level Triple A — Maths (85), Physics (81), Chemistry (83)",
+      "Malaysian Brain Bee Competition — Finalist (Form 5)",
+      "Science Fair: Biology (Cells) — Bronze Award (Form 4)",
+      "IGCSE O-Level High Achiever Award (Form 5)",
+    ],
   },
   {
-    icon: "🧮",
-    title: "Numbers & Languages",
-    desc: "Climbed from the top 11% to the top 12th percentile nationally in Kumon Mathematics between Primary 5 and 6, earned Distinction in UCMAS mental arithmetic, and scored the highest mark in Hindi as a native-language student.",
+    category: "Mathematics & Quantitative",
+    icon: "📐",
+    accent: "#c9a84c",
+    items: [
+      "Kumon Maths — ranked 217th out of 2,114 nationally (Primary 5)",
+      "Kumon Maths — ranked in top cohort nationally (Primary 6)",
+      "UCMAS Mental Arithmetic — Distinction (Primary 3)",
+      "Academic Excellence awards across Primary and Secondary",
+    ],
+  },
+  {
+    category: "Languages & Communication",
+    icon: "🗣️",
+    accent: "#1a2e1a",
+    items: [
+      "Highest mark in Hindi (native language) — Form 4",
+      "Spelling Bee Competition — 2nd Place (Primary 3)",
+      "Emcee for inter-college event at College level",
+    ],
+  },
+  {
+    category: "Academic Awards",
+    icon: "🏆",
+    accent: "#c9a84c",
+    items: [
+      "Academic Excellence — 3rd Place (Primary 2 & 4)",
+      "Academic Excellence — 5th Place (Primary 6)",
+      "KMC Mathematics — Certificate of Participation (Primary 2)",
+      "KMC Mathematics — Honourable Mention (Primary 4)",
+    ],
   },
 ];
 
@@ -29,191 +69,238 @@ export default function Academics() {
   return (
     <section
       id="academics"
-      style={{
-        padding: "6rem 2rem",
-        background: "var(--cream)",
-      }}
+      className="py-20 md:py-28 px-6"
+      style={{ backgroundColor: "#f5f1eb" }}
     >
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        {/* Section header */}
-        <div style={{ marginBottom: "3.5rem" }}>
+      <div className="max-w-5xl mx-auto">
+        {/* Section heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="mb-6"
+        >
           <p
-            style={{
-              fontFamily: "'DM Mono', monospace",
-              fontSize: "0.75rem",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "var(--gold)",
-              marginBottom: "0.75rem",
-            }}
+            className="text-sm tracking-[0.25em] uppercase mb-3"
+            style={{ color: "#c9a84c", fontFamily: "'DM Sans', sans-serif" }}
           >
-            01 — Academics
+            Academic Profile
           </p>
           <h2
+            className="text-3xl md:text-4xl font-bold mb-4"
             style={{
               fontFamily: "'Playfair Display', serif",
-              fontSize: "clamp(2rem, 4vw, 3rem)",
-              fontWeight: 600,
-              color: "var(--text-dark)",
-              lineHeight: 1.2,
-              maxWidth: 520,
+              color: "#1a2e1a",
             }}
           >
-            Excellence
-            <br />
-            <em style={{ color: "var(--forest)" }}>in the classroom</em>
+            Building the Foundation for Astrophysics
           </h2>
-        </div>
+        </motion.div>
 
-        {/* Two-column layout */}
-        <div
+        {/* Curriculum context note for international readers */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mb-10 p-5 rounded-xl border-l-4"
           style={{
-            display: "grid",
-            gridTemplateColumns: "1.2fr 1fr",
-            gap: "4rem",
-            alignItems: "start",
+            borderColor: "#c9a84c",
+            backgroundColor: "#faf8f3",
+            fontFamily: "'DM Sans', sans-serif",
+            color: "#5a5a5a",
+            fontSize: "0.9rem",
+            lineHeight: 1.7,
           }}
-          className="academics-grid"
         >
-          {/* Left: Highlights */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-            {highlights.map((h) => (
-              <div
-                key={h.title}
+          <strong style={{ color: "#1a2e1a" }}>
+            A note on the Malaysian education system:
+          </strong>{" "}
+          Malaysia follows a Primary 1–6 (ages 7–12), Form 1–5 (ages 13–17),
+          and College/Pre-University (ages 17–19) structure. Tanvi completed her
+          IGCSE O-Levels at Form 5 and is currently pursuing{" "}
+          <strong style={{ color: "#1a2e1a" }}>
+            Cambridge GCE AS &amp; A-Levels at Methodist College Kuala Lumpur
+          </strong>
+          , sitting her AS examinations in June 2026 and preparing for A2.
+        </motion.div>
+
+        {/* ── AS-Level Results — prominent display ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="mb-14 p-8 rounded-2xl"
+          style={{ backgroundColor: "#1a2e1a" }}
+        >
+          <h3
+            className="text-xl md:text-2xl font-bold mb-2 text-center"
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              color: "#f5f1eb",
+            }}
+          >
+            Cambridge GCE AS-Level Results — June 2026
+          </h3>
+          <p
+            className="text-center mb-8 text-sm"
+            style={{
+              fontFamily: "'DM Sans', sans-serif",
+              color: "#a09a90",
+            }}
+          >
+            Methodist College Kuala Lumpur · Candidate No. 2221
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {asResults.map((result, index) => (
+              <motion.div
+                key={result.code}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+                className="text-center p-6 rounded-xl"
+                style={{ backgroundColor: "rgba(201,168,76,0.1)" }}
+              >
+                <p
+                  className="text-4xl md:text-5xl font-bold mb-1"
+                  style={{
+                    fontFamily: "'Playfair Display', serif",
+                    color: "#c9a84c",
+                  }}
+                >
+                  {result.grade}
+                </p>
+                <p
+                  className="text-2xl font-semibold mb-2"
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    color: "#f5f1eb",
+                  }}
+                >
+                  {result.score}
+                </p>
+                <p
+                  className="text-sm tracking-wider uppercase"
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    color: "#a09a90",
+                  }}
+                >
+                  {result.subject}
+                </p>
+                <p
+                  className="text-xs mt-1"
+                  style={{ color: "#6b6b6b" }}
+                >
+                  ({result.code})
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ── Why Astrophysics — narrative card ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="mb-14 p-8 rounded-2xl border"
+          style={{
+            borderColor: "#b85c38",
+            backgroundColor: "#fff",
+          }}
+        >
+          <div className="flex items-start gap-4">
+            <span className="text-3xl flex-shrink-0">🔭</span>
+            <div>
+              <h3
+                className="text-xl font-bold mb-3"
                 style={{
-                  background: "var(--warm-white)",
-                  border: "1px solid var(--border)",
-                  borderRadius: 14,
-                  padding: "1.5rem",
-                  display: "flex",
-                  gap: "1rem",
-                  alignItems: "flex-start",
-                  transition: "box-shadow 0.2s",
+                  fontFamily: "'Playfair Display', serif",
+                  color: "#1a2e1a",
                 }}
               >
-                <span style={{ fontSize: "1.8rem", lineHeight: 1 }}>{h.icon}</span>
-                <div>
-                  <h3
+                Why Astrophysics
+              </h3>
+              <p
+                className="text-base leading-relaxed"
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  color: "#3a3a3a",
+                  lineHeight: 1.8,
+                }}
+              >
+                My early scientific curiosity showed itself in a Science Fair
+                investigation into cell biology and a place in the Malaysian
+                Brain Bee finals. But the questions that stay with me longest
+                are the ones about the universe at its largest scales — how
+                stars forge heavy elements in their cores, how spacetime bends
+                around massive objects, and what the cosmic microwave background
+                tells us about the first moments after the Big Bang. My
+                strongest AS-Level score came in Mathematics, the language
+                astrophysics is written in. I want to spend the next stage of my
+                education learning to speak that language fluently, and to
+                contribute to our understanding of the physical universe.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* ── Highlight cards grid ── */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {highlights.map((card, cardIndex) => (
+            <motion.div
+              key={card.category}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 * cardIndex }}
+              className="p-6 rounded-2xl border transition-shadow duration-300 hover:shadow-lg"
+              style={{
+                backgroundColor: "#ffffff",
+                borderColor: "#e5e0d8",
+              }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">{card.icon}</span>
+                <h3
+                  className="text-lg font-semibold"
+                  style={{
+                    fontFamily: "'Playfair Display', serif",
+                    color: card.accent,
+                  }}
+                >
+                  {card.category}
+                </h3>
+              </div>
+              <ul className="space-y-2">
+                {card.items.map((item, i) => (
+                  <li
+                    key={i}
+                    className="text-sm flex items-start gap-2"
                     style={{
-                      fontWeight: 600,
-                      fontSize: "1rem",
-                      color: "var(--text-dark)",
-                      marginBottom: 4,
-                    }}
-                  >
-                    {h.title}
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: "0.88rem",
-                      color: "var(--text-soft)",
+                      fontFamily: "'DM Sans', sans-serif",
+                      color: "#4a4a4a",
                       lineHeight: 1.6,
                     }}
                   >
-                    {h.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-
-            {/* Placeholder for writeup */}
-            <div
-              style={{
-                borderRadius: 14,
-                border: "1px solid var(--border)",
-                padding: "1.5rem",
-                textAlign: "center",
-                color: "var(--text-soft)",
-                fontSize: "0.82rem",
-                fontFamily: "'DM Mono', monospace",
-              }}
-            >
-              📎 EXAM RESULTS & CERTIFICATES
-              <br />
-              <span style={{ opacity: 0.6 }}>Available on request</span>
-            </div>
-          </div>
-
-          {/* Right: Grades table */}
-          <div>
-            <h3
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: "1.25rem",
-                fontWeight: 600,
-                color: "var(--text-dark)",
-                marginBottom: "1.25rem",
-              }}
-            >
-              Subject Results
-            </h3>
-            <div
-              style={{
-                background: "var(--warm-white)",
-                border: "1px solid var(--border)",
-                borderRadius: 14,
-                overflow: "hidden",
-              }}
-            >
-              {subjects.map((s, i) => (
-                <div
-                  key={s.subject}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    padding: "1rem 1.5rem",
-                    borderBottom: i < subjects.length - 1 ? "1px solid var(--border)" : "none",
-                    background: i % 2 === 0 ? "transparent" : "rgba(0,0,0,0.015)",
-                  }}
-                >
-                  <div>
-                    <span style={{ fontSize: "0.92rem", fontWeight: 500, color: "var(--text-dark)" }}>
-                      {s.subject}
-                    </span>
-                    <br />
-                    <span style={{ fontSize: "0.72rem", color: "var(--text-soft)", fontFamily: "'DM Mono', monospace" }}>
-                      {s.note}
-                    </span>
-                  </div>
-                  <span
-                    style={{
-                      background: s.grade !== "--" ? "var(--forest)" : "transparent",
-                      border: s.grade === "--" ? "1.5px dashed var(--border)" : "none",
-                      color: s.grade !== "--" ? "#fff" : "var(--text-soft)",
-                      padding: "0.3rem 0.85rem",
-                      borderRadius: 20,
-                      fontSize: "0.82rem",
-                      fontWeight: 600,
-                      fontFamily: "'DM Mono', monospace",
-                    }}
-                  >
-                    {s.grade}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <p
-              style={{
-                marginTop: "1rem",
-                fontSize: "0.78rem",
-                color: "var(--text-soft)",
-                fontFamily: "'DM Mono', monospace",
-                letterSpacing: "0.04em",
-              }}
-            >
-              * Full certificates available on request
-            </p>
-          </div>
+                    <span
+                      className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: card.accent }}
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
         </div>
       </div>
-
-      <style>{`
-        @media (max-width: 768px) {
-          .academics-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
-        }
-      `}</style>
     </section>
   );
 }

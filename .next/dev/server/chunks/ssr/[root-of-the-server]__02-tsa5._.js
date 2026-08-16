@@ -129,7 +129,7 @@ function About() {
                 children: '"'
             }, void 0, false, {
                 fileName: "[project]/app/components/About.tsx",
-                lineNumber: 13,
+                lineNumber: 12,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -147,80 +147,75 @@ function About() {
                     className: "about-grid",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center"
+                            },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 style: {
+                                    position: "relative",
                                     width: "100%",
-                                    aspectRatio: "3/4",
-                                    borderRadius: 16,
-                                    background: "rgba(255,255,255,0.07)",
-                                    border: "2px dashed rgba(200,151,62,0.4)",
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    gap: 12,
                                     maxWidth: 340
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         style: {
-                                            width: 80,
-                                            height: 80,
-                                            borderRadius: "50%",
-                                            background: "rgba(200,151,62,0.15)",
-                                            border: "2px solid rgba(200,151,62,0.3)",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            fontSize: "2rem"
+                                            width: "100%",
+                                            aspectRatio: "3/4",
+                                            borderRadius: 20,
+                                            overflow: "hidden",
+                                            border: "3px solid rgba(200,151,62,0.3)",
+                                            boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
+                                            position: "relative"
                                         },
-                                        children: "🌟"
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: "/images/tanvi.jpg",
+                                            alt: "Tanvi Ranjan — Overall Sports Day Champion",
+                                            style: {
+                                                width: "100%",
+                                                height: "100%",
+                                                objectFit: "cover",
+                                                objectPosition: "center top"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/components/About.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 17
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/About.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 32,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         style: {
-                                            color: "rgba(255,255,255,0.35)",
-                                            fontSize: "0.8rem",
-                                            textAlign: "center",
-                                            fontFamily: "'DM Mono', monospace",
-                                            letterSpacing: "0.06em",
-                                            padding: "0 2rem"
+                                            position: "absolute",
+                                            bottom: -16,
+                                            right: -16,
+                                            background: "var(--gold)",
+                                            color: "#fff",
+                                            borderRadius: 12,
+                                            padding: "0.6rem 1rem",
+                                            fontSize: "0.78rem",
+                                            fontWeight: 700,
+                                            boxShadow: "0 4px 16px rgba(200,151,62,0.4)",
+                                            whiteSpace: "nowrap"
                                         },
-                                        children: [
-                                            "ADD PHOTO HERE",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                fileName: "[project]/app/components/About.tsx",
-                                                lineNumber: 82,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                style: {
-                                                    opacity: 0.6
-                                                },
-                                                children: "replace with your image"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/components/About.tsx",
-                                                lineNumber: 83,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        children: "🏆 Overall Sports Champion"
+                                    }, void 0, false, {
                                         fileName: "[project]/app/components/About.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/About.tsx",
-                                lineNumber: 41,
+                                lineNumber: 31,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/About.tsx",
-                            lineNumber: 40,
+                            lineNumber: 30,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -237,7 +232,7 @@ function About() {
                                     children: "My Story"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/About.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -253,20 +248,20 @@ function About() {
                                         "More than the sum",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/app/components/About.tsx",
-                                            lineNumber: 114,
+                                            lineNumber: 83,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "of my achievements"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/About.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/About.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -289,12 +284,12 @@ function About() {
                                             children: para
                                         }, i, false, {
                                             fileName: "[project]/app/components/About.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 93,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/About.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -306,8 +301,9 @@ function About() {
                                     },
                                     children: [
                                         "📍 Malaysia",
-                                        "🎓 Final Year SPM / Secondary",
+                                        "🎓 Final Year Secondary",
                                         "🏅 School & State Level",
+                                        "🏆 Overall Sports Champion",
                                         "🌱 Always Learning"
                                     ].map((tag)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             style: {
@@ -321,40 +317,40 @@ function About() {
                                             children: tag
                                         }, tag, false, {
                                             fileName: "[project]/app/components/About.tsx",
-                                            lineNumber: 154,
+                                            lineNumber: 105,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/About.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/About.tsx",
-                            lineNumber: 89,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/About.tsx",
-                    lineNumber: 30,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/About.tsx",
-                lineNumber: 29,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
                 children: `
         @media (max-width: 768px) {
-          .about-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+          .about-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
         }
       `
             }, void 0, false, {
                 fileName: "[project]/app/components/About.tsx",
-                lineNumber: 173,
+                lineNumber: 119,
                 columnNumber: 7
             }, this)
         ]
