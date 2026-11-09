@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 const links = [
   { href: "#about", label: "About" },
   { href: "#academics", label: "Academics" },
+  { href: "#research", label: "Research" },
   { href: "#sports", label: "Sports" },
   { href: "#leadership", label: "Leadership" },
   { href: "#arts", label: "Arts & Culture" },
@@ -77,7 +78,7 @@ export default function Nav() {
         <div
           style={{
             display: "flex",
-            gap: "2rem",
+            gap: "1.75rem",
             alignItems: "center",
           }}
           className="desktop-nav"
@@ -87,7 +88,7 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               style={{
-                fontSize: "0.82rem",
+                fontSize: "0.78rem",
                 fontWeight: 500,
                 textDecoration: "none",
                 letterSpacing: "0.04em",

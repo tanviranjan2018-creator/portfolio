@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 /*
- * ── Colour & font tokens (kept in sync with the site palette) ──
+ * -- Colour & font tokens (kept in sync with the site palette) --
  * Forest green: #1a2e1a
  * Gold:         #c9a84c
  * Rust:         #b85c38
@@ -11,18 +11,18 @@ import { motion } from "framer-motion";
  * Playfair Display (headings), DM Sans (body)
  */
 
-/* ── AS-Level results ── */
+/* -- AS-Level results -- */
 const asResults = [
   { subject: "Mathematics", code: "9709", grade: "A", score: 85 },
   { subject: "Physics", code: "9702", grade: "A", score: 81 },
   { subject: "Chemistry", code: "9701", grade: "A", score: 83 },
 ];
 
-/* ── Highlight cards — STEM / Astrophysics direction leads ── */
+/* -- Highlight cards -- STEM / Astrophysics direction leads -- */
 const highlights = [
   {
     category: "Science & Research",
-    icon: "🔬",
+    icon: "\u{1F52C}",
     accent: "#b85c38",
     items: [
       "Cambridge AS-Level Triple A — Maths (85), Physics (81), Chemistry (83)",
@@ -33,7 +33,7 @@ const highlights = [
   },
   {
     category: "Mathematics & Quantitative",
-    icon: "📐",
+    icon: "\u{1F4D0}",
     accent: "#c9a84c",
     items: [
       "Kumon Maths — ranked 217th out of 2,114 nationally (Primary 5)",
@@ -44,7 +44,7 @@ const highlights = [
   },
   {
     category: "Languages & Communication",
-    icon: "🗣️",
+    icon: "\u{1F5E3}️",
     accent: "#1a2e1a",
     items: [
       "Highest mark in Hindi (native language) — Form 4",
@@ -54,7 +54,7 @@ const highlights = [
   },
   {
     category: "Academic Awards",
-    icon: "🏆",
+    icon: "\u{1F3C6}",
     accent: "#c9a84c",
     items: [
       "Academic Excellence — 3rd Place (Primary 2 & 4)",
@@ -126,7 +126,7 @@ export default function Academics() {
           , sitting her AS examinations in June 2026 and preparing for A2.
         </motion.div>
 
-        {/* ── AS-Level Results — prominent display ── */}
+        {/* -- AS-Level Results -- prominent display -- */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -201,9 +201,66 @@ export default function Academics() {
               </motion.div>
             ))}
           </div>
+
+          {/* Predicted A2 grades */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-8 pt-6 text-center"
+            style={{ borderTop: "1px solid rgba(201,168,76,0.2)" }}
+          >
+            <p
+              className="text-sm uppercase tracking-widest mb-2"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                color: "#a09a90",
+              }}
+            >
+              Predicted A2 Grades — November 2026
+            </p>
+            <div className="flex justify-center gap-6 flex-wrap">
+              {[
+                { subject: "Mathematics", grade: "A*" },
+                { subject: "Physics", grade: "A" },
+                { subject: "Chemistry", grade: "A" },
+              ].map((pred) => (
+                <div key={pred.subject} className="text-center">
+                  <p
+                    className="text-2xl md:text-3xl font-bold"
+                    style={{
+                      fontFamily: "'Playfair Display', serif",
+                      color: "#c9a84c",
+                    }}
+                  >
+                    {pred.grade}
+                  </p>
+                  <p
+                    className="text-xs uppercase tracking-wider mt-1"
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      color: "#7a7a7a",
+                    }}
+                  >
+                    {pred.subject}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p
+              className="mt-3 text-xs"
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                color: "#6b6b6b",
+              }}
+            >
+              Target: A*AA — aligned with entry requirements for top astrophysics programmes
+            </p>
+          </motion.div>
         </motion.div>
 
-        {/* ── Why Astrophysics — narrative card ── */}
+        {/* -- Why Astrophysics -- narrative card -- */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -216,7 +273,7 @@ export default function Academics() {
           }}
         >
           <div className="flex items-start gap-4">
-            <span className="text-3xl flex-shrink-0">🔭</span>
+            <span className="text-3xl flex-shrink-0">{"\u{1F52D}"}</span>
             <div>
               <h3
                 className="text-xl font-bold mb-3"
@@ -251,7 +308,7 @@ export default function Academics() {
           </div>
         </motion.div>
 
-        {/* ── Highlight cards grid ── */}
+        {/* -- Highlight cards grid -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {highlights.map((card, cardIndex) => (
             <motion.div

@@ -1,7 +1,9 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import ImpactHighlights from "./components/ImpactHighlights";
 import Academics from "./components/Academics";
+import Projects from "./components/Projects";
 import Sports from "./components/Sports";
 import Leadership from "./components/Leadership";
 import Arts from "./components/Arts";
@@ -16,7 +18,9 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <ImpactHighlights />
         <Academics />
+        <Projects />
         <Sports />
         <Leadership />
         <Arts />

@@ -1,7 +1,7 @@
 const artsForms = [
   {
     title: "Cultural Dance",
-    icon: "🎭",
+    icon: "\u{1F3AD}",
     color: "var(--rust)",
     items: [
       "Performed in numerous cultural dance productions from Form 3 onward",
@@ -12,7 +12,7 @@ const artsForms = [
   },
   {
     title: "Music",
-    icon: "🎵",
+    icon: "\u{1F3B5}",
     color: "var(--gold)",
     items: [
       "Piano — Grade 9, Merit",
@@ -22,7 +22,7 @@ const artsForms = [
   },
   {
     title: "National Record",
-    icon: "🏅",
+    icon: "\u{1F3C5}",
     color: "var(--forest)",
     items: [
       "Malaysian Record — Cultural Dance performance",
@@ -32,11 +32,11 @@ const artsForms = [
   },
   {
     title: "Cultural Heritage",
-    icon: "🌺",
+    icon: "\u{1F33A}",
     color: "var(--rust-light)",
     items: [
       "Active performer across multiple cultural dance traditions",
-      "Languages: add fluencies here — e.g. Hindi, English, Bahasa Malaysia",
+      "Fluent in English, Hindi, Bahasa Malaysia and basic Tamil",
     ],
   },
 ];
@@ -103,7 +103,7 @@ export default function Arts() {
             marginBottom: "3.5rem",
           }}
         >
-          A record-setting performance, two Merit-grade piano qualifications, and a stage history that started in Form 3 and hasn't stopped since.
+          A record-setting performance, two Merit-grade piano qualifications, and a stage history that started in Form 3 and hasn&apos;t stopped since.
         </p>
 
         {/* Grid */}
@@ -189,7 +189,7 @@ export default function Arts() {
               letterSpacing: "0.1em",
             }}
           >
-            📸 PERFORMANCE PHOTOS & RECORD CERTIFICATE AVAILABLE ON REQUEST
+            {"\u{1F4F8}"} PERFORMANCE PHOTOS & RECORD CERTIFICATE AVAILABLE ON REQUEST
           </p>
         </div>
       </div>
