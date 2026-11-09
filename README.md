@@ -44,3 +44,4 @@ Open [http://localhost:3000](http://localhost:3000)
 - Replace awards in `Awards.tsx`
 - Add photo in `About.tsx` (replace the placeholder div with `<Image>`)
 - Update contact email in `Contact.tsx`
+# portfolio
